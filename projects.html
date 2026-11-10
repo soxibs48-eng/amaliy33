@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Works & Projects — Zero Design Studio</title>
+  <meta name="description" content="Explore the built architectural works, residences, pavilions, and experiential spaces designed by Zero Design Studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Zero Design Studio Home">
+        <img src="assets/logo.svg" alt="Zero Design Logo" class="brand-logo">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="projects.html" class="active">Projects</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="about.html">Studio</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-primary">
+          <span>Start a Project</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button id="burgerBtn" class="burger-btn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <img src="assets/logo.svg" alt="Zero Design" style="height:32px;">
+        <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.75rem; cursor:pointer;" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">Studio & Philosophy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="contact.html" class="btn-primary" style="width:100%; text-align:center;">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + 4rem); background-color:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">[ PORTFOLIO ARCHIVE ]</div>
+        <h1 class="section-title">Built Realities & Sculptural Spaces</h1>
+        <p class="section-desc">
+          Click any project to inspect architectural blueprints, material specifications, and environmental ratings.
+        </p>
+
+        <div class="filter-btn-group" style="margin-top:2.5rem;" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Disciplines (6)</button>
+          <button class="filter-btn" data-filter="architecture">Architecture</button>
+          <button class="filter-btn" data-filter="interior">Interior Architecture</button>
+          <button class="filter-btn" data-filter="spatial">Spatial & Retail</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section">
+      <div class="container">
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="architecture" data-id="1">
+            <div class="project-thumb">
+              <img src="assets/project-1.jpg" alt="Villa Monolith Kyoto" loading="lazy">
+              <span class="project-badge">ARCHITECTURE</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">KYOTO, JAPAN</span>
+                  <span class="project-year">2025</span>
+                </div>
+                <h3 class="project-title">Villa Monolith</h3>
+                <p class="project-brief">Cantilevered carbon-cured concrete pavilion harmonizing with centuries-old bamboo woodlands.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Concrete</span>
+                <span class="project-tag-pill">Charred Cedar</span>
+                <span class="project-tag-pill">Net Zero</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="interior" data-id="2">
+            <div class="project-thumb">
+              <img src="assets/project-2.jpg" alt="The Travertine Sanctuary Milan" loading="lazy">
+              <span class="project-badge">INTERIOR</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">MILAN, ITALY</span>
+                  <span class="project-year">2024</span>
+                </div>
+                <h3 class="project-title">The Travertine Sanctuary</h3>
+                <p class="project-brief">Sculptural luxury penthouse framed with raw Roman Navona stone and satin fluted bronze.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Navona Travertine</span>
+                <span class="project-tag-pill">Brushed Brass</span>
+                <span class="project-tag-pill">Smoked Oak</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="spatial" data-id="3">
+            <div class="project-thumb">
+              <img src="assets/project-3.jpg" alt="Zero Flagship Pavilion Seoul" loading="lazy">
+              <span class="project-badge">SPATIAL & RETAIL</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">SEOUL, SOUTH KOREA</span>
+                  <span class="project-year">2025</span>
+                </div>
+                <h3 class="project-title">Zero Flagship Pavilion</h3>
+                <p class="project-brief">Experiential subterranean retail sanctuary sculpted from red clay rammed earth and kinetic light.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Rammed Earth</span>
+                <span class="project-tag-pill">Kinetic Lighting</span>
+                <span class="project-tag-pill">Red Dot 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="architecture" data-id="4">
+            <div class="project-thumb">
+              <img src="assets/project-4.jpg" alt="Lumina Nordic Retreat Oslo" loading="lazy">
+              <span class="project-badge">ARCHITECTURE</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">OSLO, NORWAY</span>
+                  <span class="project-year">2024</span>
+                </div>
+                <h3 class="project-title">Lumina Nordic Retreat</h3>
+                <p class="project-brief">Zero-emission timber chalet cantilevered directly over the reflective waters of the Oslofjord.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Kebony Timber</span>
+                <span class="project-tag-pill">Geothermal</span>
+                <span class="project-tag-pill">Off-Grid</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="interior" data-id="5">
+            <div class="project-thumb">
+              <img src="assets/project-5.jpg" alt="Atelier Vague Paris" loading="lazy">
+              <span class="project-badge">INTERIOR</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">PARIS, FRANCE</span>
+                  <span class="project-year">2023</span>
+                </div>
+                <h3 class="project-title">Atelier Vague</h3>
+                <p class="project-brief">Fluid oak partitions and acoustic felt arches transforming a classical Haussmannian apartment.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Acoustic Felt</span>
+                <span class="project-tag-pill">Curved Oak</span>
+                <span class="project-tag-pill">Heritage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card" data-category="architecture" data-id="6">
+            <div class="project-thumb">
+              <img src="assets/project-6.jpg" alt="Kanso Oasis Villa Tashkent" loading="lazy">
+              <span class="project-badge">ARCHITECTURE</span>
+              <div class="project-action-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-location">TASHKENT, UZBEKISTAN</span>
+                  <span class="project-year">2025</span>
+                </div>
+                <h3 class="project-title">Kanso Oasis Villa</h3>
+                <p class="project-brief">Reinterpreting Central Asian courtyard shade dynamics through glass walls and bio-water pools.</p>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag-pill">Courtyard Hovli</span>
+                <span class="project-tag-pill">Bio-Pool</span>
+                <span class="project-tag-pill">Terracotta</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Zero Design Studio" style="filter: brightness(0) invert(1); height:40px;">
+          <p>An international architectural, spatial, and tactile design atelier dedicated to pure materiality, carbon honesty, and timeless serenity.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Selected Works</a></li>
+            <li><a href="services.html">Disciplines</a></li>
+            <li><a href="about.html">Studio & Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Architecture</a></li>
+            <li><a href="services.html">Interior Architecture</a></li>
+            <li><a href="services.html">Spatial Branding</a></li>
+            <li><a href="services.html">Materiality Research</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social & Media</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://archdaily.com" target="_blank" rel="noopener">ArchDaily</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big-text" aria-hidden="true">ZERO DESIGN</div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZERO DESIGN STUDIO. ALL RIGHTS RESERVED. 33-AMALIY ISH.</div>
+        <div>
+          Figma Design Source: 
+          <a href="https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design?type=design&node-id=2%3A2&mode=design&t=kw21KWsKKlpaf1NT-1" target="_blank" rel="noopener" style="text-decoration:underline;">
+            Zero-Design (node-id: 2:2)
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Lightbox Modal -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="Project detail">
+      </div>
+      <div class="modal-body">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+          <span id="modalLocation" style="font-family:var(--font-mono); font-size:0.875rem; color:var(--accent-pine);"></span>
+          <span id="modalCategory" class="project-tag-pill"></span>
+        </div>
+        <h3 id="modalTitle" class="section-title" style="margin-bottom:1rem;"></h3>
+        <p id="modalLead" style="font-size:1.125rem; font-weight:600; color:var(--text-primary); margin-bottom:1rem; line-height:1.6;"></p>
+        <p id="modalDesc" style="color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem;"></p>
+        
+        <h4 style="font-family:var(--font-mono); font-size:0.8125rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent-coral); margin-bottom:0.75rem;">Architectural Specifications</h4>
+        <ul id="modalSpecs" style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; color:var(--text-secondary); font-size:0.9375rem;"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

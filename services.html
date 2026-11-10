@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Disciplines — Zero Design Studio</title>
+  <meta name="description" content="Explore our architectural planning, interior architecture, spatial branding, and digital twin services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Zero Design Studio Home">
+        <img src="assets/logo.svg" alt="Zero Design Logo" class="brand-logo">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="services.html" class="active">Services</a></li>
+          <li class="nav-item"><a href="about.html">Studio</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-primary">
+          <span>Start a Project</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button id="burgerBtn" class="burger-btn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <img src="assets/logo.svg" alt="Zero Design" style="height:32px;">
+        <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.75rem; cursor:pointer;" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">Studio & Philosophy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="contact.html" class="btn-primary" style="width:100%; text-align:center;">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + 4rem); background-color:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">[ CORE DISCIPLINES & SERVICES ]</div>
+        <h1 class="section-title">A Seamless Continuum from Macro to Micro</h1>
+        <p class="section-desc">
+          We integrate landscape, architecture, interior detailing, and digital interaction into a single cohesive creative journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section">
+      <div class="container services-grid">
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <span class="service-idx">01</span>
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M13 11l6 3v7"/></svg>
+              </div>
+            </div>
+            <h3>Architectural Planning & Exterior Design</h3>
+            <p>From initial topographical surveys to full construction documentation for bespoke private residences, estates, and cultural landmarks.</p>
+            <ul class="service-features">
+              <li>Solar path & microclimatic modeling</li>
+              <li>Carbon-neutral concrete & timber massing</li>
+              <li>LEED Platinum / Passivhaus standard design</li>
+              <li>Local zoning & statutory planning approvals</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="service-link">Inquire for Architecture →</a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <span class="service-idx">02</span>
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+            </div>
+            <h3>Interior Architecture & Custom Millwork</h3>
+            <p>Sculptural living environments designed around quiet contemplation, natural Roman stones, hand-turned brass, and integrated acoustic management.</p>
+            <ul class="service-features">
+              <li>Turnkey FF&E and bespoke furniture curation</li>
+              <li>Acoustic optimization & hidden mechanicals</li>
+              <li>Circadian lighting design with high-CRI fixtures</li>
+              <li>Direct quarry sourcing of authentic travertine</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="service-link">Inquire for Interiors →</a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <span class="service-idx">03</span>
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+              </div>
+            </div>
+            <h3>Spatial Branding & Experiential Retail</h3>
+            <p>Transforming corporate identities and retail spaces into tactile, sensorial journeys that forge visceral emotional connections with visitors.</p>
+            <ul class="service-features">
+              <li>Visitor journey mapping & tactile choreography</li>
+              <li>Kinetic architectural lighting and scent zones</li>
+              <li>Modular, carbon-offset exhibition pavilions</li>
+              <li>Spatial brand guidelines & physical design tokens</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="service-link">Inquire for Spatial Branding →</a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <span class="service-idx">04</span>
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+              </div>
+            </div>
+            <h3>Digital Twins & Real-Time Visualization</h3>
+            <p>Interactive 3D real-time architectural environments rendered in Unreal Engine 5, enabling interactive client immersion prior to groundbreaking.</p>
+            <ul class="service-features">
+              <li>Real-time sun & shadow angle simulation</li>
+              <li>Virtual Reality (VR) walk-throughs for stakeholders</li>
+              <li>Digital twins for ongoing building management</li>
+              <li>High-resolution cinematic marketing films</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="service-link">Inquire for Digital Twins →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology / Process -->
+    <section class="section" style="background-color:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">[ METHODOLOGY ]</div>
+        <h2 class="section-title">The Four-Phase Zero Method</h2>
+        <p class="section-desc">A rigorous, transparent architectural protocol ensuring artistic vision matches structural reality.</p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:2rem; margin-top:3.5rem;">
+          <div style="background-color:var(--bg-card); padding:2rem; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+            <div style="font-family:var(--font-mono); font-size:1.5rem; font-weight:700; color:var(--accent-pine); margin-bottom:0.75rem;">01</div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Discovery & Site Geodesy</h4>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">Drone mapping, wind and solar vector modeling, soil acoustic testing, and alignment with client aspirations.</p>
+          </div>
+
+          <div style="background-color:var(--bg-card); padding:2rem; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+            <div style="font-family:var(--font-mono); font-size:1.5rem; font-weight:700; color:var(--accent-pine); margin-bottom:0.75rem;">02</div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Conceptual Sculpting</h4>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">Monolithic massing studies, clay maquettes, and daylight studies to refine void-to-solid architectural proportions.</p>
+          </div>
+
+          <div style="background-color:var(--bg-card); padding:2rem; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+            <div style="font-family:var(--font-mono); font-size:1.5rem; font-weight:700; color:var(--accent-pine); margin-bottom:0.75rem;">03</div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Tectonic Detailing</h4>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">Direct quarry material selection, bespoke metal millwork joinery drawings, and carbon footprint balance sheets.</p>
+          </div>
+
+          <div style="background-color:var(--bg-card); padding:2rem; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+            <div style="font-family:var(--font-mono); font-size:1.5rem; font-weight:700; color:var(--accent-pine); margin-bottom:0.75rem;">04</div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Site Supervision & Handover</h4>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.6;">Continuous on-site artisan supervision, acoustic calibration, and final commissioning with client orientation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Zero Design Studio" style="filter: brightness(0) invert(1); height:40px;">
+          <p>An international architectural, spatial, and tactile design atelier dedicated to pure materiality, carbon honesty, and timeless serenity.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Selected Works</a></li>
+            <li><a href="services.html">Disciplines</a></li>
+            <li><a href="about.html">Studio & Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Architecture</a></li>
+            <li><a href="services.html">Interior Architecture</a></li>
+            <li><a href="services.html">Spatial Branding</a></li>
+            <li><a href="services.html">Materiality Research</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social & Media</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://archdaily.com" target="_blank" rel="noopener">ArchDaily</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big-text" aria-hidden="true">ZERO DESIGN</div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZERO DESIGN STUDIO. ALL RIGHTS RESERVED. 33-AMALIY ISH.</div>
+        <div>
+          Figma Design Source: 
+          <a href="https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design?type=design&node-id=2%3A2&mode=design&t=kw21KWsKKlpaf1NT-1" target="_blank" rel="noopener" style="text-decoration:underline;">
+            Zero-Design (node-id: 2:2)
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

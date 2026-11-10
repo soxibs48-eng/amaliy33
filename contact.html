@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries — Zero Design Studio</title>
+  <meta name="description" content="Initiate a dialogue for your next architectural, interior, or spatial branding commission with Zero Design Studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Zero Design Studio Home">
+        <img src="assets/logo.svg" alt="Zero Design Logo" class="brand-logo">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="about.html">Studio</a></li>
+          <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="contact.html" class="btn-primary">
+          <span>Start a Project</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button id="burgerBtn" class="burger-btn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <img src="assets/logo.svg" alt="Zero Design" style="height:32px;">
+        <button id="drawerCloseBtn" style="background:none; border:none; font-size:1.75rem; cursor:pointer;" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">Studio & Philosophy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="contact.html" class="btn-primary" style="width:100%; text-align:center;">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + 4rem); background-color:var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">[ GLOBAL INQUIRIES & ADVISORY ]</div>
+        <h1 class="section-title">Initiate a Conversation</h1>
+        <p class="section-desc">
+          Tell us about your site, architectural vision, or spatial brand brief. Our principals personally review every inquiry within 48 business hours.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info-card">
+          <div>
+            <div class="section-tag">[ ATELIER LOCATIONS ]</div>
+            <h2 class="section-title" style="font-size:2rem;">Visit or Call Our Studios</h2>
+            
+            <div class="studio-locations" style="margin-top:2.5rem;">
+              <div class="studio-loc-item">
+                <h4>Kyoto Headquarters</h4>
+                <p>32 Higashiyama-ku, Kyoto 605-0001, Japan<br>Mon – Fri: 09:00 – 18:00 JST<br><strong>+81 (75) 541-2090</strong></p>
+              </div>
+
+              <div class="studio-loc-item">
+                <h4>Milan Atelier</h4>
+                <p>Via Brera 14, 20121 Milano, Italy<br>Mon – Fri: 10:00 – 19:00 CET<br><strong>+39 (02) 8901-4432</strong></p>
+              </div>
+
+              <div class="studio-loc-item">
+                <h4>Tashkent Practice</h4>
+                <p>Amir Temur Avenue 108, Tashkent 100084, Uzbekistan<br>Mon – Fri: 09:00 – 18:00 UZT<br><strong>+998 (71) 200-9080</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:3rem; padding:2rem; background-color:var(--bg-secondary); border-radius:var(--radius-md);">
+            <div style="font-family:var(--font-mono); font-size:0.8125rem; color:var(--accent-pine); margin-bottom:0.5rem;">PRESS & LECTURES</div>
+            <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.6;">
+              For media features, monographs, and academic guest lectures, please reach out directly to <strong>press@zerodesign.studio</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="consultationForm">
+            <h3 style="font-family:var(--font-serif); font-size:1.5rem; font-weight:700; margin-bottom:1.5rem;">Commission Inquiry Form</h3>
+            
+            <div class="form-group">
+              <label class="form-label" for="client_name">Full Name *</label>
+              <input type="text" id="client_name" name="client_name" class="form-control" placeholder="e.g. Sirotillo Sobirjanov" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client_email">Email Address *</label>
+              <input type="email" id="client_email" name="client_email" class="form-control" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client_phone">Phone / WhatsApp (Optional)</label>
+              <input type="tel" id="client_phone" name="client_phone" class="form-control" placeholder="+998 90 123 45 67">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="project_type">Project Nature</label>
+              <select id="project_type" name="project_type" class="form-control">
+                <option value="residential">Private Residential Architecture</option>
+                <option value="interior">Interior Architecture & Millwork</option>
+                <option value="retail">Spatial Branding & Experiential Retail</option>
+                <option value="hospitality">Eco-Resort / Hospitality</option>
+                <option value="digital">3D Digital Twin & Parametric Modeling</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="project_budget">Estimated Budget Tier</label>
+              <select id="project_budget" name="project_budget" class="form-control">
+                <option value="standard">$250,000 – $750,000</option>
+                <option value="premium">$750,000 – $2,500,000</option>
+                <option value="monumental">$2,500,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client_message">Vision, Location & Brief *</label>
+              <textarea id="client_message" name="client_message" class="form-control" placeholder="Describe the physical site, square footage, intended timeline, and aesthetic objectives..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%;">
+              <span>Transmit Inquiry</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Zero Design Studio" style="filter: brightness(0) invert(1); height:40px;">
+          <p>An international architectural, spatial, and tactile design atelier dedicated to pure materiality, carbon honesty, and timeless serenity.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Selected Works</a></li>
+            <li><a href="services.html">Disciplines</a></li>
+            <li><a href="about.html">Studio & Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Architecture</a></li>
+            <li><a href="services.html">Interior Architecture</a></li>
+            <li><a href="services.html">Spatial Branding</a></li>
+            <li><a href="services.html">Materiality Research</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social & Media</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://archdaily.com" target="_blank" rel="noopener">ArchDaily</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-big-text" aria-hidden="true">ZERO DESIGN</div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZERO DESIGN STUDIO. ALL RIGHTS RESERVED. 33-AMALIY ISH.</div>
+        <div>
+          Figma Design Source: 
+          <a href="https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design?type=design&node-id=2%3A2&mode=design&t=kw21KWsKKlpaf1NT-1" target="_blank" rel="noopener" style="text-decoration:underline;">
+            Zero-Design (node-id: 2:2)
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span class="toast-text">So'rovingiz qabul qilindi. Tez orada bog'lanamiz!</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
