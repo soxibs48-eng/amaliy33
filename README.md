@@ -169,3 +169,4 @@ amaliy33/
 - **Guruh**: 21.10
 - **Topshiriq**: 33-Amaliy Ish
 - **Figma Manzili**: [Zero Design (node-id: 2:2)](https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design?type=design&node-id=2%3A2&mode=design&t=kw21KWsKKlpaf1NT-1)
+

@@ -1,6 +1,6 @@
 /**
  * ZERO DESIGN STUDIO — JAVASCRIPT CONTROLLER
- * Amaliy Ish 33 — Master ES6 Module
+ * Amaliy Ish 33 — Master ES6 Module (O'zbek tilida)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
 });
 
-/* 1. Theme Toggle (Light / Dark Mode) */
+/* 1. Theme Toggle (Tungi / Kunduzgi Rejim) */
 function initThemeToggle() {
   const toggleBtn = document.getElementById('themeToggleBtn');
   if (!toggleBtn) return;
@@ -37,7 +37,7 @@ function initThemeToggle() {
     toggleBtn.innerHTML = theme === 'dark' 
       ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`
       : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
-    toggleBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'Light' : 'Dark'} theme`);
+    toggleBtn.setAttribute('aria-label', `${theme === 'dark' ? 'Kunduzgi' : 'Tungi'} rejimga o'tish`);
   }
 }
 
@@ -58,7 +58,7 @@ function initHeaderScroll() {
   onScroll();
 }
 
-/* 3. Mobile Drawer Navigation */
+/* 3. Mobil Menyusi (Mobile Drawer) */
 function initMobileDrawer() {
   const burgerBtn = document.getElementById('burgerBtn');
   const drawer = document.getElementById('mobileDrawer');
@@ -78,7 +78,7 @@ function initMobileDrawer() {
   });
 }
 
-/* 4. Portfolio Filter */
+/* 4. Loyihalarni Filtrlash */
 function initPortfolioFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
@@ -111,67 +111,67 @@ function initPortfolioFilter() {
   });
 }
 
-/* 5. Project Lightbox Modal */
+/* 5. Loyiha Modal Lightbox (O'zbek tilida ma'lumotlar) */
 const projectData = {
   '1': {
     title: 'Villa Monolith',
-    location: 'Kyoto, Japan',
+    location: 'Kioto, Yaponiya',
     year: '2025',
-    category: 'Architecture / Sustainable',
+    category: 'Arxitektura / Ekologik',
     image: 'assets/project-1.jpg',
-    lead: 'Minimalist concrete and charred cedar residence seamlessly embedded within an ancient bamboo sanctuary.',
-    description: 'Designed as a dialogue between architectural permanence and organic transience, Villa Monolith sits gently on a cantilevered foundation to preserve tree root networks. Features triple-glazed acoustic curtain walls, passive solar thermal massing, and rainwater harvesting cisterns.',
-    specs: ['Site Area: 1,840 m²', 'Structure: Carbon-Cured Concrete & Japanese Cypress', 'Energy Rating: Net Zero Standard']
+    lead: 'Qadimiy bambukzor o\'rmoni bilan mukammal uyg\'unlashgan monolitik beton va kuygan kedr (Yakisugi) villasi.',
+    description: 'Daraxt ildizlari tizimini saqlab qolish maqsadida konsol poydevor ustiga qurilgan. Uch qavatli akustik shisha devorlar, passiv quyosh issiqlik massasi va yomg\'ir suvini qayta yig\'ish tizimi bilan ta\'minlangan.',
+    specs: ['Yer maydoni: 1,840 m²', 'Konstruksiya: Uglerod bilan toblangan beton va yapon sarvi', 'Energiya reytingi: Net Zero Standarti (Nol energiya sarfi)']
   },
   '2': {
     title: 'The Travertine Sanctuary',
-    location: 'Milan, Italy',
+    location: 'Milan, Italiya',
     year: '2024',
-    category: 'Interior Architecture',
+    category: 'Interyer Arxitekturasi',
     image: 'assets/project-2.jpg',
-    lead: 'A 420m² penthouse renovation balancing raw Roman travertine with monolithic walnut volumes.',
-    description: 'Every surface in the Travertine Sanctuary is custom-detailed to honor authentic materiality. From custom bronze door hardware to invisible acoustic baffles, this interior offers an oasis of pure silence amid Milan’s vibrant design district.',
-    specs: ['Area: 420 m²', 'Materials: Navona Travertine, Brushed Brass, Smoked Oak', 'Lighting: Custom Viabizzuno architectural fixtures']
+    lead: 'Tabiiy Rim Navona travertini va massiv yong\'oq yog\'ochi uyg\'unligidagi 420 m² maydonli shinam pentxaus.',
+    description: 'Har bir yuza taktil soflikni aks ettiradi. Maxsus quyilgan bronza furnituralardan tortib ko\'rinmas akustik panellargacha Milan dizayn markazida mutlaq sukunat va xotirjamlik maskanini yaratadi.',
+    specs: ['Ichki maydon: 420 m²', 'Asosiy materiallar: Navona travertini, cho\'tkalangan jez, tutunli eman', 'Yoritish: Viabizzuno mualliflik me\'moriy chiroqlari']
   },
   '3': {
     title: 'Zero Flagship Pavilion',
-    location: 'Seoul, South Korea',
+    location: 'Seul, Janubiy Koreya',
     year: '2025',
-    category: 'Spatial & Retail',
+    category: 'Fazoviy & Savdo Pavilyoni',
     image: 'assets/project-3.jpg',
-    lead: 'An experiential flagship store featuring curved rammed-earth monoliths and interactive kinetic lighting.',
-    description: 'A revolutionary retail experience that reimagines commerce as a cultural sanctuary. Visitors flow through subterranean curved galleries of locally sourced clay before emerging into a sun-filled atrium.',
-    specs: ['Floors: 3 Levels (1,200 m²)', 'Carbon Footprint: -14% (Net Negative Carbon)', 'Honors: Red Dot Best of the Best 2025']
+    lead: 'Egilgan qizil tuproq monolitlari va kinetik yorug\'likdan tashkil topgan noyob brend tajriba ibodatxonasi.',
+    description: 'Savdo maydonini madaniy ziyoratgohga aylantirgan inqilobiy yechim. Mehmonlar mahalliy loydan shakllantirilgan yerosti arkalari orqali quyosh nuri bilan to\'lgan baland atriumga chiqadilar.',
+    specs: ['Qavatlar: 3 daraja (1,200 m²)', 'Uglerod balansi: -14% (Net Negative Carbon)', 'Mukofot: Red Dot Best of the Best 2025 g\'olibi']
   },
   '4': {
     title: 'Lumina Nordic Retreat',
-    location: 'Oslo, Norway',
+    location: 'Oslo, Norvegiya',
     year: '2024',
-    category: 'Architecture / Eco',
+    category: 'Arxitektura / Eko-shole',
     image: 'assets/project-4.jpg',
-    lead: 'A zero-emission alpine pavilion cantilevered over the icy waters of the Oslofjord.',
-    description: 'Harnessing ground-source geothermal heating and intelligent sun-tracking louvers, Lumina remains completely off-grid throughout harsh Scandinavian winters while maximizing cinematic water views.',
-    specs: ['Site: Coastal Fjord Ridge', 'Heating: 100% Geothermal Heat Pump', 'Timber: Certified PEFC Kebony pine']
+    lead: 'Oslofyordining moviy suvlari ustida muallaq turuvchi nol-emissiyali geotermal yog\'och qo\'rg\'on.',
+    description: 'Yer tubidan olinuvchi geotermal isitish va quyoshga moslashuvchi avtomatlashgan jalyuzilar yordamida qishning eng sovuq kunlarida ham shahar elektr tarmog\'isiz to\'liq mustaqil ishlaydi.',
+    specs: ['Joylashuv: Fjord qoyalari bo\'yi', 'Isitish: 100% geotermal issiqlik nasosi', 'Yog\'och: Sertifikatlangan PEFC Kebony qarag\'ayi']
   },
   '5': {
     title: 'Atelier Vague',
-    location: 'Paris, France',
+    location: 'Parij, Fransiya',
     year: '2023',
-    category: 'Interior / Creative Studio',
+    category: 'Interyer / Ijodiy Studiya',
     image: 'assets/project-5.jpg',
-    lead: 'Haussmannian building revitalized into an acoustic-first creative studio with fluid oak partition walls.',
-    description: 'Restoring historical moldings while inserting modern curvilinear timber pods that function as acoustic meeting chambers, recording studios, and digital projection spaces.',
-    specs: ['Space: 650 m²', 'Acoustic Rating: STC 54', 'Collaborators: 45 Global Artists']
+    lead: 'Tarixiy Gosman davri binosining akustik kigiz arkalar va egilgan eman devorlari orqali yangilanishi.',
+    description: 'Tarixiy ganchkorlik naqshlarini saqlab qolgan holda, ichki qismga yig\'ilishlar, audio yozuvlar va raqamli 3D proyeksiyalar uchun mo\'ljallangan zamonaviy yog\'och kapsulalar kiritildi.',
+    specs: ['Umumiy maydon: 650 m²', 'Akustik izolyatsiya: STC 54', 'Jamoa: 45 nafar xalqaro ijodkorlar uchun']
   },
   '6': {
     title: 'Kanso Oasis Villa',
-    location: 'Tashkent, Uzbekistan',
+    location: 'Toshkent, O\'zbekiston',
     year: '2025',
-    category: 'Architecture / Desert Modernism',
+    category: 'Arxitektura / Sharqona Zamonaviylik',
     image: 'assets/project-6.jpg',
-    lead: 'Modern oasis residence merging Central Asian courtyard heritage with monumental glass cantilevers.',
-    description: 'Reinterpreting traditional Uzbek inner courtyard (hovli) microclimate cooling through modern reflecting pools, deep overhangs, and thermal terracotta masonry for year-round energy efficiency.',
-    specs: ['Plot: 2,400 m²', 'Water Feature: 80 m² natural bio-filter pool', 'Climate Control: 65% reduction in cooling energy']
+    lead: 'Markaziy Osiyoning an\'anaviy ichki hovli (hovli) madaniyatini shisha kantileverlar bilan birlashtirgan voha villasi.',
+    description: 'Qadimiy hovli soyasi va tabiiy suv havzasi orqali havoni tabiiy sovutish tizimi yaratildi. Bu issiq yoz faslida faol konditsioner quvvat sarfini 65% ga kamaytiradi.',
+    specs: ['Hudud maydoni: 2,400 m²', 'Suv havzasi: 80 m² tabiiy bio-filtrli ko\'l', 'Iqlim nazorati: 65% gacha elektr tejovi']
   }
 };
 
@@ -226,36 +226,36 @@ function initProjectModal() {
   });
 }
 
-/* 6. Materiality Explorer */
+/* 6. Taktil Materiallar Laboratoriyasi (Materiality Explorer) */
 const materialData = {
   'travertine': {
-    title: 'Navona Roman Travertine',
-    spec: 'POROUS SEDIMENTARY LIMESTONE // QUARRIED IN TIVOLI, ITALY',
-    desc: 'Celebrated since antiquity for its warm honey undertones and organic linear veining. Unfilled and honed to maintain tactile authenticity while breathing naturally with indoor humidity.',
+    title: 'Navona Rim Travertini',
+    spec: 'G\'OVAK CHO\'KINDI OHAKTOSH // TIVOLI KARYERLARI, ITALIYA',
+    desc: 'Qadim zamonlardan buyon iliq asalrang jilosi va organik chiziqli qatlamlari bilan qadrlanadi. Xonadagi namlikni tabiiy muvozanatlash uchun g\'ovaklari to\'ldirilmasdan jilolanadi.',
     image: 'assets/material-travertine.jpg'
   },
   'wood': {
     title: 'Shou Sugi Ban (Yakisugi)',
-    spec: 'CARBONIZED JAPANESE CEDAR // FIRE-PRESERVED ARCHITECTURAL CLADDING',
-    desc: 'An ancient Japanese charring method that renders cedar naturally resistant to rot, fire, and pests without artificial chemicals, yielding a deep, shimmering obsidian black patina.',
+    spec: 'KUYDIRILGAN YAPON KEDRI // OLOVDA TOBLANGAN HIMOYA QATLAMI',
+    desc: 'Qadimiy yapon an\'anasi bo\'lib, yog\'och sirtini olov bilan kuydirish orqali uni chirish, yong\'in va hasharotlardan kimyoviy moddalarsiz tabiiy himoya qiladi va yaltiroq qora tus beradi.',
     image: 'assets/material-wood.jpg'
   },
   'brass': {
-    title: 'Living Brushed Brass',
-    spec: 'UNLACQUERED ARCHITECTURAL ALLOY // AGES WITH HUMAN TOUCH',
-    desc: 'Finished with a bespoke directional satin brush. Left unsealed so each handle and trim subtly evolves over decades, reflecting the natural life of the home.',
+    title: 'Tabiiy Cho\'tkalangan Jez (Bronza)',
+    spec: 'LAKLANMAGAN ME\'MORIY QOTISHMA // INSON TEGIShI BILAN PATINA OLADI',
+    desc: 'Besh daqiqali yo\'naltirilgan satin cho\'tkasi bilan ishlov beriladi. Ustki qismi laklanmaydi, natijada tutqichlar o\'n yillar davomida uy hayoti bilan birga olijanob qorayib boradi.',
     image: 'assets/material-brass.jpg'
   },
   'concrete': {
-    title: 'Bio-Composite Microcement',
-    spec: 'LOW-CARBON POZZOLANIC MATRIX // SEAMLESS MONOLITHIC FINISH',
-    desc: 'Engineered with mineral binders and recycled pozzolans to reduce embodied emissions by 55% compared to standard Portland cement, delivering an ultra-smooth velvety touch.',
+    title: 'Bio-Kompozit Mikrotsement',
+    spec: 'KAM UGLERODLI POTSSOLAN MATRITSASI // CHOKSIZ MONOLIT PARDOZ',
+    desc: 'Standart sementga nisbatan uglerod ajralishini 55% ga kamaytiradi. Mineral bog\'lovchilar va maydalangan tabiiy kukunlardan tayyorlanib, mayin baxmaldek silliqlik bag\'ishlaydi.',
     image: 'assets/material-concrete.jpg'
   },
   'glass': {
-    title: 'Reeded Acoustic Glass',
-    spec: 'LOW-IRON FLUTED GLAZING // PRIVACY WITH MAXIMUM LUMEN TRANSMISSION',
-    desc: 'Precision-grooved architectural glass that softly diffuses daylight into painterly vertical bands of light while attenuating unwanted acoustic vibrations.',
+    title: 'Qovurg\'ali Akustik Shisha',
+    spec: 'TEMIRSIZ EGILGAN REEDED SHISHA // MAKSIMAL YORUGLIK VA MAXFIYLIK',
+    desc: 'Vertikal chuqurchalarga ega me\'moriy shisha bo\'lib, kun yorug\'ligini xonaga chiroyli vertikal nurlar shaklida yoyadi va keraksiz shovqin to\'lqinlarini so'ndiradi.',
     image: 'assets/material-glass.jpg'
   }
 };
@@ -289,7 +289,7 @@ function initMaterialityExplorer() {
   });
 }
 
-/* 7. Numbers Counter Animation on Scroll */
+/* 7. Raqamlarni Jonli Hisoblash (Animated Counters) */
 function initCounters() {
   const counters = document.querySelectorAll('.metric-number');
   if (!counters.length) return;
@@ -323,7 +323,7 @@ function initCounters() {
   if (metricsSection) observer.observe(metricsSection);
 }
 
-/* 8. Contact Form Handling & Toast Feedback */
+/* 8. Bog'lanish Formasi va Toast Bildirishnomasi */
 function initContactForm() {
   const form = document.getElementById('consultationForm');
   const toast = document.getElementById('toastNotice');
@@ -332,10 +332,8 @@ function initContactForm() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = form.querySelector('[name="client_name"]')?.value || 'Guest';
-    const email = form.querySelector('[name="client_email"]')?.value || '';
+    const name = form.querySelector('[name="client_name"]')?.value || 'Hurmatli mehmon';
 
-    // Show Toast
     if (toast) {
       toast.querySelector('.toast-text').textContent = `Tashakkur, ${name}! So'rovingiz qabul qilindi. Tez orada bog'lanamiz.`;
       toast.classList.add('show');
